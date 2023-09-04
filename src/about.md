@@ -1,13 +1,8 @@
 ---
-title: About
+title: A propos
 ---
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-sunt in culpa qui officia deserunt mollit anim id est laborum.
+Je partage sur ce site tous mes apprentissages liés au développement produit, au no-code, et aux nouveaux modèles d'organisation. J'ai lancé ce site en août 2023.
 
-Brigantes femina duce exurere coloniam, expugnare castra, ac nisi felicitas
-in tali casu effugium subveniebat in aperta et solida. Neque is miseriarum
-finis. Struendum vallum, petendus agger, amissa magna ex parte luxus
-egestatis scelerum sibi conscios nisi pollutum obstrictumque meritis suis
-principem passuros.
+### Qui suis-je ?
+Je suis Paul Oromi, je travaille chez makesense, une association française depuis début 2019. Ingénieur en Génie Industriel, je mobilise mes connaissances techniques pour accompagner les salariés à multiplier leur potentiel, grâce à différents outils numériques.
