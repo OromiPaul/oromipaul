@@ -1,49 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Page Title</title>
-        <link rel="stylesheet" href="assets/fonts.css">
-        <link rel="stylesheet" href="assets/graphite.css">
-        <link rel="stylesheet" href="assets/pygments.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+    
+    <link rel="stylesheet" href="assets/outline.css">
+    <link rel="stylesheet" href="assets/pygments.css">
+</head>
+<body class="node homepage">
+    <div id="page-head">
+        <a href="index.html">Home</a>
+        <a href="parent.html">Parent page</a>
+        <a href="about.html" class="hide-on-mobile">A propos</a>
+    </div>
+    <div class="line"></div>
+
+    <div id="page-title">
+        <h1>Page Title</h1>
         
+            <p>This page has a subtitle.</p>
         
-    </head>
-    <body class="node homepage">
-        <header class="masthead">
-            <h1><a href="index.html">Site Title</a></h1>
-            
-                <p class="tagline">Just another Ark site.</p>
-            
-            
-            <nav class="menu">
-                <input id="menu-check" type="checkbox"/>
-                <label id="menu-label" for="menu-check" class="unselectable">
-                    <span class="icon close-icon">✕</span>
-                    <span class="icon open-icon">☰</span>
-                    <span class="text">Menu</span>
-                </label>
-                <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="parent.html">Parent Page</a><ul>
-<li><a href="parent/child-one.html">Child One</a></li>
-<li><a href="parent/child-two.html">Child Two</a></li>
-</ul>
-</li>
-<li><a href="about.html">About</a></li>
-</ul>
-            </nav>
-        </header>
-        <article class="main">
-            <header class="title">
-                <h1>Page Title</h1>
-                
-                    <p class="subtitle">This page has a subtitle.</p>
-                
-                <hr>
-            </header>
-            <p>
+    </div>
+    <div class="line"></div>
+
+    <div id="page-content">
+        <p>
 Lorem ipsum dolor sit amet, consectetur <a href="#">adipiscing elit</a>, sed do eiusmod
 <i>tempor incididunt</i> ut labore et <b>dolore magna</b> aliqua. Ut enim ad minim
 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -232,7 +214,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </dd>
 </div>
 </dl>
-        </article>
-        
-    </body>
+    </div>
+    <div class="line"></div>
+
+    <div id="page-foot"></div>
+</body>
 </html>
