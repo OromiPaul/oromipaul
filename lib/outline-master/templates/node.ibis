@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ node.meta_title || node.title || site.title }}</title>
+    {% if node.meta_description %}
+        <meta name="description" content="{$ node.meta_description.strip() $}">
+    {% endif %}
+    <link rel="stylesheet" href="@root/assets/outline.css">
+    <link rel="stylesheet" href="@root/assets/pygments.css">
+</head>
+<body class="{$ classes|join(' ') $}">
+    <div id="page-head">
+        <a href="@root/">Home</a>
+        <a href="@root/parent//">Parent page</a>
+        <a href="@root/about//" class="hide-on-mobile">A propos</a>
+    </div>
+    <div class="line"></div>
+
+    <div id="page-title">
+        <h1>{{ node.title }}</h1>
+        {% if node.subtitle %}
+            <p>{{ node.subtitle }}</p>
+        {% endif %}
+    </div>
+    <div class="line"></div>
+
+    <div id="page-content">
+        {{ node.html }}
+    </div>
+    <div class="line"></div>
+
+    <div id="page-foot"></div>
+</body>
+</html>
