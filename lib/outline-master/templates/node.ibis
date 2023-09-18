@@ -13,7 +13,7 @@
 <body class="{$ classes|join(' ') $}">
     <div id="page-head">
         <a href="@root/">Home</a>
-        <a href="@root/parent//">Parent page</a>
+        <a href="@root/projects//">Projets réalisés</a>
         <a href="@root/about//" class="hide-on-mobile">A propos</a>
     </div>
     <div class="line"></div>
