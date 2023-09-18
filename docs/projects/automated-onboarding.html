@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Un onboarding automatisé</title>
+        <link rel="stylesheet" href="../assets/fonts.css">
+        <link rel="stylesheet" href="../assets/graphite.css">
+        <link rel="stylesheet" href="../assets/pygments.css">
+        
+        
+    </head>
+    <body class="node-projects-automated-onboarding node-projects node">
+        <header class="masthead">
+            <h1><a href="../index.html">Paul Oromi</a></h1>
+            
+                <p class="tagline">Just another Ark site.</p>
+            
+            
+            <nav class="menu">
+                <input id="menu-check" type="checkbox"/>
+                <label id="menu-label" for="menu-check" class="unselectable">
+                    <span class="icon close-icon">✕</span>
+                    <span class="icon open-icon">☰</span>
+                    <span class="text">Menu</span>
+                </label>
+                <ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="../parent.html">Parent Page</a></li>
+<li><a href="../about.html">A propos</a></li>
+</ul>
+            </nav>
+        </header>
+        <article class="main">
+            <header class="title">
+                <h1>Un onboarding automatisé</h1>
+                
+                <hr>
+            </header>
+            <h3>Historique et contexte</h3>
+<p>A mon arrivée chez makesense, j'ai eu la chance de passer mes premiers instants sur Slack à recevoir du contenu de formation directement sur Slack. Un petit bot, nommé Axel, m'envoyait régulièrement du contenu pendant mes premières semaines, me permettant de me former à ma vitesse.</p>
+<p>Plus tard, lorsque je me suis penché sur <a href="https://www.heyaxel.com/">la solution technique utilisée</a>, je me suis rendu compte que nous utilisions un service beaucoup trop puissant pour nous. Nous n'exploitions qu'une partie minime de la solution proposée : l'envoi de messages automatiques, programmé pour n'importe quel nouveau, directement dans Slack.</p>
+<p>J'ai décidé de me pencher sur le problème, en essayant de simplifier l'utilisation de cet outil, pour qu'il soit complètement intégré au processus actuel d'onboarding. Ainsi, le remplissage d'un questionnaire signalant l'arrivée d'un nouveau me permet de configurer directement son onboarding.</p>
+<h3>Solution technique</h3>
+<h4>Outils utilisés</h4>
+<h5>Airtable</h5>
+<p>Chez makesense, Airtable est la solution pour gérer l'ensemble des bases de données, et notamment celle concernant les salarié·e·s. Il était donc assez évident de s'en servir pour avoir une data bien à jour, ainsi que pour pouvoir profiter de son système d'interface.</p>
+<h6>Make</h6>
+<p>Make est la solution pour automatiser, dès que l'on dépasse le cadre de l'automatisation simple. Ici, rien de trop compliqué, moins de 5 automatisations suffisent à tout gérer.</p>
+<h6>Slack</h6>
+<p>Evidemment, tous les messages sont envoyés via Slack. En créant un petit bot via Make, il est aisé d'envoyer des messages à n'importe qui !</p>
+<h4>Comment ça marche ?</h4>
+<p>Commençons par découper ce produit en plusieurs sous-produits pour mieux appréhender la complexité de ce système.</p>
+<p>1️⃣ Premièrement, nous avons besoin d'une automatisation qui, pour chaque nouvelle personne, va générer tous les messages à envoyer. En se basant sur un template de messages et sur la date d'arrivée, il est simple de créer chacun des messages, en y assignant la bonne date d'envoi.</p>
+<p>2️⃣ Ensuite, pour chacun des messages préalablement généré, il suffit d'utiliser la date d'envoi pour envoyer le message via Slack. Rien de trop compliqué ici.</p>
+<p>3️⃣ Pour améliorer le projet un tout petit peu, un peu de personnalisation ne va pas faire de mal. Pour la première partie, une interface Airtable viendra en support pour vérifier si la personne a bien avancé son onboarding en complétant ses différentes tâches. Pour la seconde partie, je vais améliorer l'expérience utilisateur en permettant au nouveau de savoir à quelle partie de son onboarding il en est.</p>
+<p>En résumé : Générer les messages -&gt; Les envoyer -&gt; Vérifier s'ils sont bien lus.</p>
+<h5>Partie 1 : Générer les messages à envoyer</h5>
+<p>Pour stocker l'ensemble des messages à envoyer, il faut commencer à créer une base Airtable, qui aura la structure suivante :</p>
+        </article>
+        
+    </body>
+</html>

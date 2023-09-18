@@ -36,6 +36,7 @@ pre .mf { color: #000088 }                      /* Literal.Number.Float */
 pre .mh { color: #000088 }                      /* Literal.Number.Hex */
 pre .mi { color: #000088 }                      /* Literal.Number.Integer */
 pre .mo { color: #000088 }                      /* Literal.Number.Oct */
+pre .mb { color: #000088 }                      /* Literal.Number.Bin */
 pre .n  { color: #222222 }                      /* Name */
 pre .na { color: #8f5902 }                      /* Name.Attribute */
 pre .nb { color: #204a87 }                      /* Name.Builtin */
@@ -43,9 +44,9 @@ pre .nc { color: #222222 }                      /* Name.Class */
 pre .no { color: #222222 }                      /* Name.Constant */
 pre .nd { color: #000088 }                      /* Name.Decorator */
 pre .ni { color: #ce5c00 }                      /* Name.Entity */
-pre .ne { color: #880000 }                      /* Name.Exception */
+pre .ne { color: #cc0000; font-weight: bold }   /* Name.Exception */
 pre .nf { color: #222222 }                      /* Name.Function */
-pre .nl { color: #f57900 }                      /* Name.Label */
+pre .nl { color: #880000 }                      /* Name.Label */
 pre .nn { color: #222222 }                      /* Name.Namespace */
 pre .nt { color: #204a87; font-weight: bold }   /* Name.Tag */
 pre .nv { color: #222222 }                      /* Name.Variable */
